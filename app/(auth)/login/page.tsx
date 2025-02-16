@@ -8,8 +8,8 @@ export default function LoginPage() {
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-bold">
-            <div className="flex h-10 w-24 items-center justify-center rounded-md  text-primary-foreground">
-              <Image src={"/snrt.png"} alt={"logo SNRT"} width={500} height={500}></Image>
+            <div className="flex h-full w-24 items-center justify-center rounded-md  text-primary-foreground">
+              <Image src={"/logo.png"} alt={"logo SNRT"} width={500} height={500}></Image>
             </div>
             SNRT
           </a>

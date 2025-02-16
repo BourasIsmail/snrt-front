@@ -9,7 +9,7 @@ import {Footer} from "@/components/footer";
 const technologies = [
     {
         icon: Truck,
-        title: "Safe AI",
+        title: "CAR 1",
         description: "Developing secure and reliable artificial intelligence solutions",
         color: "group-hover:text-blue-500",
         delay: 0,
@@ -17,7 +17,7 @@ const technologies = [
     },
     {
         icon: Truck,
-        title: "Safety-Critical Systems",
+        title: "CAR 2",
         description: "Engineering systems where reliability is paramount",
         color: "group-hover:text-red-500",
         delay: 0.1,
@@ -25,7 +25,7 @@ const technologies = [
     },
     {
         icon: Truck,
-        title: "Robotics",
+        title: "CAR 3",
         description: "Advanced robotics solutions for complex challenges",
         color: "group-hover:text-purple-500",
         delay: 0.2,

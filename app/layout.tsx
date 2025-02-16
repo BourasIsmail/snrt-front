@@ -1,8 +1,9 @@
-import "../globals.css"
+import "./globals.css"
 import { Poppins } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import { LayoutWithSidebar } from "@/components/layout-with-sidebar"
 import type React from "react"
+import ReactQueryProvider from "@/components/ReactQueryProvider";
+import {Toaster} from "@/components/ui/toaster";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -13,6 +14,13 @@ const poppins = Poppins({
 export const metadata = {
   title: "SNRT - Gestion de matériel",
   description: "Système de gestion de matériel pour SNRT",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/snrt.png", type: "image/png" },
+    ],
+    apple: { url: "/snrt.png", type: "image/png" },
+  },
 }
 
 export default function RootLayout({
@@ -21,13 +29,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
-      <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <LayoutWithSidebar>{children}</LayoutWithSidebar>
-        </ThemeProvider>
-      </body>
-    </html>
+      <ReactQueryProvider>
+        <html lang="fr" suppressHydrationWarning>
+          <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              {children}
+              <Toaster />
+            </ThemeProvider>
+          </body>
+        </html>
+      </ReactQueryProvider>
   )
 }
 
