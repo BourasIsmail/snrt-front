@@ -5,13 +5,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4">
-            <span className="text-sm text-gray-400">&copy; 2025 AimNovo</span>
+            <span className="text-sm text-gray-400">&copy; 2025</span>
             <span className="h-4 w-px bg-gray-800" />
-            <span className="text-sm text-gray-400">All rights reserved</span>
+            <span className="text-sm text-gray-400">APP By BOURAS</span>
           </div>
           <div className="flex space-x-6">
-            <a href="mailto:contact@aimnovo.com" className="text-sm text-gray-400 hover:text-gray-300">
-              contact@aimnovo.com
+            <a href="mailto:email@gmail.com" className="text-sm text-gray-400 hover:text-gray-300">
+              email@gmail.com
             </a>
           </div>
         </div>
